@@ -1,0 +1,237 @@
+/* Estilos generales */
+:root {
+  /* Escala de grises */
+  --gray-1: #191F25;       /* Gris casi negro - fondo/header */
+  --gray-2: #272E36;       /* Gris oscuro */
+  --gray-3: #5B5D62;       /* Gris medio */
+  --gray-4: #9095A1;       /* Gris claro */
+  --gray-5: #B1B2B9;       /* Gris muy claro - fondo */
+  
+  /* Acentos */
+  --accent: #F0E96E;       /* Amarillo mostaza para destacar */
+  
+  /* Textos */
+  --text-dark: #272E36;    
+  --text-light: #F8F9FA;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--gray-5);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: var(--gray-1);
+  color: var(--text-light);
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-weight: 700;
+}
+
+/* Main content */
+.main-content {
+  padding: 1rem 0;
+}
+
+/* Carrusel */
+.carousel-container {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+   
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  z-index: 1;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: var(--accent);
+  transform: scale(1.2);
+}
+
+.student-carousel {
+  background-color: var(--gray-4);
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+/* Tarjetas de estudiantes */
+.student-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  max-width: 320px;
+  border: 1px solid var(--gray-3);
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Estado de carga */
+.loading-state {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Tabla de estudiantes */
+.all-students {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+    --bs-table-bg: var(--gray-5);
+    --bs-table-striped-bg: #e2e4e6;
+    --bs-table-hover-bg: #d5d8db;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .table th {
+    background-color: var(--gray-2);
+    color: var(--text-light);
+    padding: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+
+  .table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--gray-4);
+    transition: all 0.2s ease;
+  }
+  
+  .table-hover > tbody > tr:hover {
+    --bs-table-hover-bg: rgba(196, 79, 79, 0.15); /* Usando tu color --accent con transparencia */
+    background-color: var(--bs-table-hover-bg);
+  }
+  
+  .table-hover > tbody > tr:hover > td {
+    color: var(--gray-1);
+  }
+  
+  
+  .table td:last-child {
+    text-align: center;
+  }
+
+  .btn-sm {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+  }
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.project-item {
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-scores {
+  font-style: italic;
+  color: #666;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--gray-2);
+  border-color: var(--gray-2);
+}
+
+.btn-primary:hover {
+  background-color: var(--gray-1);
+  border-color: var(--accent);
+}
+
+/* Textos */
+.card-title {
+  color: var(--gray-2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 0;
+  }
+  
+  .student-card {
+    max-width: 280px;
+  }
+}

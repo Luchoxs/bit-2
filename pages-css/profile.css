@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header del perfil */
+.profile-header {
+    background-color: #272E36;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-meta {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-meta .badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+/* Tarjetas de contenido */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Lista de proyectos */
+.project-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.project-scores {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Gráfico */
+#performanceChart {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .row > div {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-header {
+        padding: 2rem 0;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .student-meta .badge {
+        display: block;
+        margin: 0.5rem auto;
+        max-width: 200px;
+    }
+}
+@media (max-width: 375px) {
+    .student-meta {
+        flex-direction: column;
+    }
+}
