@@ -1,11 +1,11 @@
-/* Estilos generales */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
     color: #333;
 }
 
-/* Header del perfil */
+
 .profile-header {
     background-color: #272E36;
     color: white;
@@ -35,7 +35,7 @@ body {
     margin: 0 0.5rem;
 }
 
-/* Tarjetas de contenido */
+
 .card {
     border: none;
     border-radius: 10px;
@@ -47,7 +47,7 @@ body {
     padding: 1.5rem;
 }
 
-/* Lista de proyectos */
+
 .project-item {
     padding: 1rem 0;
     border-bottom: 1px solid #eee;
@@ -68,13 +68,13 @@ body {
     color: #666;
 }
 
-/* Gráfico */
+
 #performanceChart {
     width: 100% !important;
     height: 300px !important;
 }
 
-/* Responsividad */
+
 @media (max-width: 992px) {
     .profile-img {
         width: 120px;
